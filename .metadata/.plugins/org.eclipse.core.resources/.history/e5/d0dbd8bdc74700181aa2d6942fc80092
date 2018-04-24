@@ -1,0 +1,12 @@
+package com.ships.services;
+
+import com.ships.model.OrderInfo;
+
+public class OrderService {
+
+	public Iterable<OrderInfo> findAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}
