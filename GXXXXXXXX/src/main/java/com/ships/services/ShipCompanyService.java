@@ -16,7 +16,7 @@ import com.ships.repositories.ShippingCompanyInterface;
 	@Autowired
 	private ShippingCompanyInterface shippingCompanyRepository;
 	
-	public List<Ship> findAll() {
+	public Iterable<ShippingCompany> findAll() {
 		return (List<Ship>) shippingCompanyRepository.findAll();
 		
 	}

@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.SessionAttributes;
 
 import com.ships.model.OrderInfo;
 import com.ships.services.OrderService;
+import com.ships.services.ShipCompanyService;
 import com.ships.services.ShipService;
-import com.ships.services.ShippingCompanyService;
 
 public class ShipOrderController {
 
@@ -23,7 +23,7 @@ public class ShipOrderController {
 		@Autowired
 		private ShipService shipService;
 		@Autowired
-		private ShippingCompanyService shippingCompanyService;
+		private ShipCompanyService shippingCompanyService;
 		
 		
 		

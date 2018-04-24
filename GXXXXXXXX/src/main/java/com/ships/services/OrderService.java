@@ -13,10 +13,9 @@ public class OrderService {
 
 	public Iterable<OrderInfo> findAll() {
 		
-		@Autowired
-		private OrderInfoInterface orderInfoInterface;
+		OrderInfoInterface orderInfoInterface;
 		
-		public ArrayList<OrderInfo> findAll() {
+		ArrayList<OrderInfo> findAll() {
 			return orderInfoInterface.findAll();
 		}
 		

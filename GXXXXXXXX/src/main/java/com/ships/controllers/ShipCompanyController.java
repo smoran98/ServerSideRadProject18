@@ -8,14 +8,14 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.SessionAttributes;
 
 import com.ships.model.ShippingCompany;
-import com.ships.services.ShippingCompanyService;
+import com.ships.services.ShipCompanyService;
 
 @SessionAttributes({"shippingCompany","shippingCompanies"})
 @Controller
-public class ShippingCompanyController {
+public class ShipCompanyController {
 
 	@Autowired
-	private ShippingCompanyService shippingCompanyService;
+	private ShipCompanyService shippingCompanyService;
 	
 	@RequestMapping(value = "/showShippingCompanies", method=RequestMethod.GET)
 	public String showShippingCompanies(Model model) {
