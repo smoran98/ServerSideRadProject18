@@ -1,19 +1,23 @@
 package com.ships.services;
 
- import org.springframework.beans.factory.annotation.Autowired;
+ import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
  import org.springframework.stereotype.Service;
 
- import com.ships.model.ShippingCompany;
+import com.ships.model.Ship;
+import com.ships.model.ShippingCompany;
+import com.ships.repositories.ShippingCompanyInterface;
 
 
  @Service
- public class ShippingCompanyService {
+ public class ShipCompanyService {
 
 	@Autowired
-	private ShippingCompanyRepository shippingCompanyRepository;
+	private ShippingCompanyInterface shippingCompanyRepository;
 	
-	public Iterable<ShippingCompany> findAll() {
-		return shippingCompanyRepository.findAll();
+	public List<Ship> findAll() {
+		return (List<Ship>) shippingCompanyRepository.findAll();
 		
 	}
 	
