@@ -10,14 +10,13 @@ import com.ships.repositories.OrderInfoInterface;
 
 @Service
 public class OrderService {
+	
+	OrderInfoInterface orderInfoInterface;
 
-	public Iterable<OrderInfo> findAll() {
+	public ArrayList<OrderInfo> findAll() {
 		
-		OrderInfoInterface orderInfoInterface;
+		return (ArrayList<OrderInfo>) orderInfoInterface.findAll();
 		
-		ArrayList<OrderInfo> findAll() {
-			return orderInfoInterface.findAll();
-		}
 		
 	}
 

@@ -20,15 +20,10 @@ public class ShipService {
 		return(List<Ship>) shipRepo.findAll();
 	}
 
-	public static Iterable<Ship> findAll() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	public void save(Ship ship) {
-		// TODO Auto-generated method stub
-		return ShipRepository.save(ship);
-	}
-	
+//	public void save(Ship ship) {
+//		// TODO Auto-generated method stub
+//		return ShipRepository.save(ship);
+//	}
+//	
 
 }
